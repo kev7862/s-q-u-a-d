@@ -1,4 +1,4 @@
-import java.util.map;
+import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
 import spark.ModelAndView;
@@ -9,7 +9,10 @@ public class App {
   public static void main(String [] args ) {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
+
     get("/", (request,response) -> {
+Map<String, Object> model = new HashMap<String, Object>();
+//retrieving heros ArrayList data from session and placing it in the model with heros key
   model.put("heros", request.session().attribute("heros"));
   model.put("template",  "templates/index.vtl");
   return new ModelAndView(model, layout);
