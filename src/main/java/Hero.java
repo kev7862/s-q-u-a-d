@@ -56,3 +56,4 @@ public int getId() {
 public static Hero find(int id) {
   return instances.get(id - 1);
 }
+}
