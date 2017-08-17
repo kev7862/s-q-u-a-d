@@ -13,8 +13,14 @@ public class App {
     get("/", (request,response) -> {
 Map<String, Object> model = new HashMap<String, Object>();
 //retrieving heros ArrayList data from session and placing it in the model with heros key
-  model.put("template",  "template/index.vtl");
-  return new ModelAndView(model, "template/layout.vtl");
+  model.put("template",  "templates/index.vtl");
+  return new ModelAndView(model, "templates/layout.vtl");
+}, new VelocityTemplateEngine());
+
+get("/squads", (request, response) -> {
+  Map<String, Object> model = new HashMap<String, Object>();
+  model.put("template", "templates/squads.vtl");
+  return new ModelAndView(model, layout);
 }, new VelocityTemplateEngine());
 
   }

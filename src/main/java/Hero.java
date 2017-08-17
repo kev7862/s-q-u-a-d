@@ -22,38 +22,3 @@ public class Hero {
     mId = instances.size();
   }
 }
-
-//=====implements getName()
-public String getName() {
-  return mName;
-}
-
-//===implements getAge()
-public int getAge() {
-  return mAge;
-}
-
-//=====implements getspower()
-public String getSpower() {
-  return mSpower;
-}
-
-//=====implements getWeakness
-public String getWeakness() {
-  return mWeakness;
-}
-
-//====implements getall()
-public static List<Hero>all() {
-  return instances;
-}
-
-//implements getId()
-public int getId() {
-  return mId;
-}
-
-public static Hero find(int id) {
-  return instances.get(id - 1);
-}
-}
