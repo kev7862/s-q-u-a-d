@@ -1,0 +1,8 @@
+.index{
+  font-size: 30px;
+  font-family: fantasy;
+}
+#home{
+  background-image: url(/images/playstation.png);
+  width: 100%;
+}
