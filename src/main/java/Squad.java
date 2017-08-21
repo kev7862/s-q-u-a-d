@@ -12,8 +12,9 @@ public class Squad {
   public Squad (String name) {
     mName = name;
     instances.add(this); // instances appear before mId
-    mHeroes = new ArrayList<Hero>();
 
+    mHeroes = new ArrayList<Hero>();
+    mid = instances.size();
   }
 
   //implements getName()

@@ -21,4 +21,37 @@ public class Hero {
     instances.add(this);
     mId = instances.size();
   }
+
+  //implements getName()
+public String getName() {
+  return mName;
+}
+//implements getAge()
+public int getAge() {
+  return mAge;
+}
+//implements getSpower()
+public String getSpower() {
+  return mSpower;
+}
+//implements getWeakness()
+public String getWeakness() {
+  return mWeakness;
+}
+//implements getCreatedAt()
+public LocalDateTime getCreatedAt() {
+  return mCreatedAt;
+}
+//implements all()
+public static List<Hero> all() {
+  return instances;
+}
+//implements clear()
+public static void clear() {
+instances.clear();
+}
+//implements getId()
+public int getId() {
+ return mId;
+}
 }
